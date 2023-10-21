@@ -7,11 +7,11 @@ import { FormButton } from "../components/common/Buttons";
 
 const Login = () =>{
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [Contraseña, setContraseña] = useState('');
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(`Email: ${email}, Password: ${password}`);
+        console.log(`Email: ${email}, Contraseña: ${Contraseña}`);
     }
 
     return(
@@ -21,12 +21,12 @@ const Login = () =>{
                 <H1>Iniciar Sesión</H1>
                 <FormContainer>
                     <div class="FormCon-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu email"/>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
+                        <label for="exampleInputContraseña1">Contraseña</label>
+                        <input type="Contraseña" class="form-control" id="exampleInputContraseña1" placeholder="Contraseña"/>
                     </div>
                     <FormButton type="submit" class="btn btn-primary" style={{alignSelf:"center",width:"50%"}}>Ingresar</FormButton>
                 </FormContainer>
