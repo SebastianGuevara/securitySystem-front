@@ -4,17 +4,26 @@ import Sidebar from "./components/features/main/Sidebar";
 import { BrowserRouter as Router, Route} from "react-router-dom";
 import { Routes } from "react-router-dom/dist"
 import Map from "./pages/Map";
+import Login from "./pages/Login";
 
 function App() {
 
   return (
     <Container>
       <Router>
-        <Sidebar/>
-        <Header/>
         <Routes>
-          <Route path="/map" element={<Map/>}/>
-          <Route path="*" element={null}/>
+          <Route path="/login" element={<Login/>} />
+            <Route path="*"
+              element={
+                <>
+                  <Sidebar />
+                  <Header />
+                  <Routes>
+                    <Route path="/map" element={<Map />} />
+                  </Routes>
+                </>
+              }
+            />
         </Routes>
       </Router>
     </Container>

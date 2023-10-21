@@ -63,5 +63,38 @@ display: flex;
 align-items: center;
 justify-content: center;
 overflow: hidden;
-
 `
+export const LoginContainer = styled(Container)`
+background: linear-gradient(0deg, hsla(217, 100%, 17%, 1) 0%, hsla(218, 95%, 37%, 1) 100%);
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 50px;
+`
+export const LoginFormContainer = styled.div`
+min-width: 450px;
+max-width: 500px;
+width: 25vw;
+height: 45vh;
+background-color: ${ColorPallete.background};
+border-radius: 30px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+flex-direction: column;
+overflow: hidden;
+align-items: center;
+justify-content: center;
+gap: 20px;
+@media (orientation: portrait) {
+    min-width: 100px;
+    width: 80%;
+    height:350px;
+}
+`
+export const FormContainer = styled.form`
+display: flex;
+flex-direction: column;
+gap: 30px;
+`
+

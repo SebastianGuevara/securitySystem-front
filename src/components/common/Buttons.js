@@ -36,3 +36,12 @@ text-decoration:none;
     border-left: 3px solid ${ColorPallete.blue};
 }
 `
+
+export const FormButton = styled.button`
+background-color: ${ColorPallete.primary};
+color: ${ColorPallete.background};
+outline: none;
+border: none;
+padding: 10px 20px;
+border-radius: 15px;
+`
