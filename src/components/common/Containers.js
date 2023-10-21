@@ -8,6 +8,7 @@ display:flex;
 align-items:flex-start;
 justify-content:flex-start;
 background-color: ${ColorPallete.background};
+position: relative;
 `
 export const SidebarContainer = styled.div`
 height:100vh;
@@ -25,6 +26,8 @@ box-sizing: border-box;
 flex-direction: column;
 gap:30px;
 z-index: 2;
+
+
 
 @media (orientation: portrait) {
     min-width:0px;
@@ -45,9 +48,20 @@ padding: 10px;
 box-sizing: border-box;
 position: relative;
 gap:20px;
+position: absolute;
+
+z-index: 1;
 @media (orientation: portrait) {
     height:50px;
 }
+`
 
+export const DefaultContainer = styled.div`
+height:100%;
+width:100%;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
 
 `

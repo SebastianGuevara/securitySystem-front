@@ -17,7 +17,7 @@ const Sidebar = () =>{
     return(
         <SidebarContainer ref={sidebarRef} width={sidebar.sidebarWidth} onBlur={()=>console.log("test2")}>
             <LogoImage src={logo}/>
-            <AdminSidebarButton>
+            <AdminSidebarButton to="/map">
                 <SidebarIcon icon="material-symbols:map-outline" width='18px'/>
                 Mapa general
             </AdminSidebarButton>
