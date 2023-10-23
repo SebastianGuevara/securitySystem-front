@@ -19,7 +19,7 @@ function App() {
                   <Sidebar />
                   <Header />
                   <Routes>
-                    <Route path="/map" element={<Map />} />
+                    <Route path="/map/*" element={<Map />} />
                   </Routes>
                 </>
               }

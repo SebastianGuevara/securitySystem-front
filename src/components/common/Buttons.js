@@ -45,3 +45,14 @@ border: none;
 padding: 10px 20px;
 border-radius: 15px;
 `
+
+export const AreaButton = styled.button`
+background-color: ${ColorPallete.primary};
+color: ${ColorPallete.background};
+width: 50%;
+height: 40px;
+border-radius: 10px;
+border: none;
+outline: none;
+font-size: 1rem;
+`

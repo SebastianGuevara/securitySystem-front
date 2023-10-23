@@ -12,9 +12,7 @@ position: relative;
 `
 export const SidebarContainer = styled.div`
 height:100vh;
-min-width:100px;
-width: 30%;
-max-width:300px;
+width:250px;
 background-color: ${ColorPallete.primary};
 transition: 0.5s;
 overflow:hidden;
@@ -57,12 +55,21 @@ z-index: 1;
 `
 
 export const DefaultContainer = styled.div`
-height:100%;
-width:100%;
+
+height:calc(100% - 80px);
+width:calc(100% - 250px);
 display: flex;
 align-items: center;
 justify-content: center;
 overflow: hidden;
+flex-direction: column;
+position: absolute;
+bottom: 0;
+right: 0;
+
+@media (orientation: portrait) {
+    width:100%;
+}
 `
 export const LoginContainer = styled(Container)`
 background: linear-gradient(0deg, hsla(217, 100%, 17%, 1) 0%, hsla(218, 95%, 37%, 1) 100%);
@@ -98,3 +105,43 @@ flex-direction: column;
 gap: 30px;
 `
 
+export const MapContainer = styled.div`
+
+display: flex;
+align-items: flex-start;
+justify-content: center;
+@media (orientation: portrait) {
+    flex-direction: column;
+}
+`
+export const SecondMapContainer = styled.div`
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+`
+
+export const DefaultHorizontalontainer = styled(DefaultContainer)`
+flex-direction: row;
+gap: 30px;
+padding: 20px;
+box-sizing: border-box;
+@media (orientation: portrait) {
+    flex-direction: column;
+}
+
+`
+export const SideDeafautlContainer = styled.div`
+height:80%;
+width:100%;
+padding: 20px;
+box-sizing: border-box;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: white;
+border-radius: 30px;
+flex-direction: column;
+gap:30px;
+
+`
