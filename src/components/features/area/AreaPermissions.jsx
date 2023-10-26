@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { DefaultContainer, DefaultHorizontalontainer, SideDeafautlContainer } from "../../common/Containers"
 import { useLocation } from "react-router-dom";
 import { getAreaById } from "../../../services/AreaServices";
+import { AreaImage } from "../../common/Images";
 
 
 const AreaPersmissions = () => {
@@ -22,6 +23,7 @@ const AreaPersmissions = () => {
             <DefaultHorizontalontainer style={{width:"100%"}}>
                 <SideDeafautlContainer style={{justifyContent:"flex-start"}}>
                     <h1>Cámara</h1>
+                    <AreaImage style={{height:"60%", width:"auto"}} src={`/${location.pathname.split("/")[2]}.png`}/>
                 </SideDeafautlContainer>
                 <SideDeafautlContainer style={{justifyContent:"flex-start"}}>
                     <h1>Permisos</h1>
