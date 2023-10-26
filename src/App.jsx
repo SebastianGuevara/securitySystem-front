@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route} from "react-router-dom";
 import { Routes } from "react-router-dom/dist"
 import Map from "./pages/Map";
 import Login from "./pages/Login";
+import AreaPersmissions from "./components/features/area/AreaPermissions";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
                   <Header />
                   <Routes>
                     <Route path="/map/*" element={<Map />} />
+                    <Route path="/area/*" element={<AreaPersmissions/>} />
                   </Routes>
                 </>
               }

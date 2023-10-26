@@ -103,6 +103,7 @@ export const FormContainer = styled.form`
 display: flex;
 flex-direction: column;
 gap: 30px;
+font-size: 1.2rem;
 `
 
 export const MapContainer = styled.div`
@@ -126,8 +127,12 @@ flex-direction: row;
 gap: 30px;
 padding: 20px;
 box-sizing: border-box;
+
+
 @media (orientation: portrait) {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 `

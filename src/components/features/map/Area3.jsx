@@ -12,19 +12,19 @@ const Area3 = () => {
             </SideDeafautlContainer>
             <SideDeafautlContainer>
                 <H1>Area 3</H1>
-                <AreaButton>
+                <AreaButton to="/area/8">
                     Entrada principal
                 </AreaButton>
-                <AreaButton>
+                <AreaButton to="/area/9">
                     Ascensor
                 </AreaButton>
-                <AreaButton>
+                <AreaButton to="/area/10">
                     Escalera 1
                 </AreaButton>
-                <AreaButton>
+                <AreaButton to="/area/11">
                     Escalera 2
                 </AreaButton>
-                <AreaButton>
+                <AreaButton to="/area/12">
                     Entrada baños
                 </AreaButton>
             </SideDeafautlContainer>

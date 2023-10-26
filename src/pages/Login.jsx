@@ -2,17 +2,10 @@ import { FormContainer, LoginContainer, LoginFormContainer } from "../components
 import { BigLogoImage } from "../components/common/Images";
 import Logo from "../assets/images/logo.png"
 import { H1 } from "../components/common/Texts";
-import { useState } from 'react';
 import { FormButton } from "../components/common/Buttons";
 
 const Login = () =>{
-    const [email, setEmail] = useState('');
-    const [Contraseña, setContraseña] = useState('');
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log(`Email: ${email}, Contraseña: ${Contraseña}`);
-    }
 
     return(
         <LoginContainer>

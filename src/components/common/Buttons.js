@@ -46,7 +46,7 @@ padding: 10px 20px;
 border-radius: 15px;
 `
 
-export const AreaButton = styled.button`
+export const AreaButton = styled(Link)`
 background-color: ${ColorPallete.primary};
 color: ${ColorPallete.background};
 width: 50%;
@@ -55,4 +55,8 @@ border-radius: 10px;
 border: none;
 outline: none;
 font-size: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
 `
