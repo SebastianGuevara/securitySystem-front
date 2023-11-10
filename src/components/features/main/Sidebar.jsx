@@ -21,6 +21,10 @@ const Sidebar = () =>{
                 <SidebarIcon icon="material-symbols:map-outline" width='18px'/>
                 Mapa general
             </AdminSidebarButton>
+            <AdminSidebarButton to="/qr">
+                <SidebarIcon icon="bx:qr" width='18px'/>
+                QR
+            </AdminSidebarButton>
         </SidebarContainer>
     )
 }

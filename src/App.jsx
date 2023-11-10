@@ -6,6 +6,7 @@ import { Routes } from "react-router-dom/dist"
 import Map from "./pages/Map";
 import Login from "./pages/Login";
 import AreaPersmissions from "./components/features/area/AreaPermissions";
+import Qr from "./pages/Qr";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
                   <Sidebar />
                   <Header />
                   <Routes>
+                    <Route path="/qr" element={<Qr />} />
                     <Route path="/map/*" element={<Map />} />
                     <Route path="/area/*" element={<AreaPersmissions/>} />
                   </Routes>
