@@ -7,6 +7,7 @@ import Map from "./pages/Map";
 import Login from "./pages/Login";
 import AreaPersmissions from "./components/features/area/AreaPermissions";
 import Qr from "./pages/Qr";
+import ScanQR from "./pages/ScanQR";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
                 </>
               }
             />
+            <Route path="/scan/*" element={<ScanQR/>}/>
         </Routes>
       </Router>
     </Container>

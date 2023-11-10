@@ -150,3 +150,28 @@ flex-direction: column;
 gap:30px;
 
 `
+export const ScanContainer = styled(DefaultContainer)`
+background-color: ${ColorPallete.background};
+width: 100%;
+height: 100%;
+`
+export const ButtonsScrollContainer = styled.div`
+background-color: white;
+height: 80%;
+width: 40%;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+box-sizing: border-box;
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+flex-direction: column;
+gap: 20px;
+overflow-y: scroll;
+padding: 10px;
+
+
+@media (orientation: portrait) {
+    width: 80%;
+}
+`

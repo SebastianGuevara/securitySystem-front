@@ -60,3 +60,8 @@ align-items: center;
 justify-content: center;
 text-decoration: none;
 `
+
+export const SelectionButton = styled(AreaButton)`
+width: 90%;
+height: 60px;
+`

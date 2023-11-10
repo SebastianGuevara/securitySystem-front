@@ -1,13 +1,14 @@
-import QRCode from 'qrcode.react';
+import QRCode from 'react-qr-code';
 import { DefaultContainer } from '../components/common/Containers';
 import { useSelector } from 'react-redux';
 import ColorPallete from '../assets/ColorPallete';
 import styled from 'styled-components'
 const Qr = () => {
     const user = useSelector(state => state.user);
+    const id = user.id;
     return (
         <DefaultContainer>
-            <QR fgColor={ColorPallete.primary} bgColor="#f2f2f2" value={user.id} level='Q' renderAs='canvas' size="1000" style={{}}/>
+            {id?<QR fgColor={ColorPallete.primary} bgColor="#f2f2f2" value={id.toString()}/>:null}
         </DefaultContainer>
     )
 }
